@@ -1,5 +1,4 @@
 
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.php">Site de recettes</a>
@@ -14,7 +13,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contact</a>
                 </li>
-                <?php if(isset($_SESSION['LOGGED_USER'])) : ?>
+                <?php if (isset($_SESSION['LOGGED_USER'])) : ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipes_create.php">Ajoutez une recette !</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php">Déconnexion</a>
                     </li>
