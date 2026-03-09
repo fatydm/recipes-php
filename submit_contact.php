@@ -37,7 +37,7 @@ if (isset($_FILES['screenshot']) && $_FILES['screenshot']['error'] == 0){
     }
 
 // 4 - je check si le fichier uploads (qui stocke les images) existe bien 
-    $path = __DIR__ . '/uploads';
+    $path = __DIR__ . '/uploads/';
     if (!is_dir($path)){
         echo ("L'envoi n'a pas pu être effectué, le dossier uploads est manquant");
         return;
