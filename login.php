@@ -8,6 +8,7 @@
                     unset($_SESSION['LOGIN_ERROR_MESSAGE']); ?>
             </div>
         <?php endif; ?>
+    
 
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
@@ -24,6 +25,6 @@
 <!-- Si user bien connecté, on affiche un message de succès -->
         <?php else :?>
             <div class="alert alert-success" role="alert">
-                Bonjour <?php echo $_SESSION['LOGGED_USER']['full_name']; ?> et bienvenue sur le site
+                Bonjour <?php echo $_SESSION['LOGGED_USER']['email']; ?> et bienvenue sur le site
         </div>
 <?php endif; ?>
